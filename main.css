@@ -4,6 +4,10 @@ body
     
 }
 
+.audio-player iframe {
+    display: none;
+}
+
 .bday-container {
     display: flex;
     align-items: center; /* Align image and text vertically */
