@@ -233,23 +233,6 @@ function handleNextQuestion() {
 }
 
 
-//called when the next button is called
-/*function handleNextQuestion() {
-    checkForAnswer()
-    unCheckRadioButtons()
-    //delays next question displaying for a second
-    setTimeout(() => {
-        indexNumber++;
-        if (indexNumber <= 10) { //update this to number of questions you want -1. determines when there's no more question and should display answer
-            NextQuestion(indexNumber)
-        }
-        else {
-            handleEndGame()
-        }
-        resetOptionBackground()
-    }, 1000);
-}*/
-
 //sets options background back to null after display the right/wrong colors
 function resetOptionBackground() {
     const options = document.getElementsByName("option");
@@ -302,6 +285,7 @@ function handleEndGame() {
 
 //closes score modal and resets game
 function closeScoreModal() {
+    console.log("Continue button clicked");
     questionNumber = 1
     playerScore = 0
     wrongAttempt = 0
@@ -309,6 +293,7 @@ function closeScoreModal() {
     shuffledQuestions = []
     NextQuestion(indexNumber)
     document.getElementById('score-modal').style.display = "none"
+    window.location.href = "http://127.0.0.1:5500/index.html";
 }
 
 //function to close warning modal
