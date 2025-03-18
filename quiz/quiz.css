@@ -28,6 +28,10 @@ main{
     background-position: center;
 }
 
+.audio-player iframe {
+    display: none;
+}
+
 .game-quiz-container{
     width: 40rem;
     height: 30rem;
