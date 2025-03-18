@@ -1,0 +1,103 @@
+body
+{
+    background-color: pink;
+    
+}
+
+.bday-container {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 10px; /* Space between image and text */
+}
+
+.header_text
+{
+    margin: 0;
+    font-size: 1.5em;
+    font-size: 50px;
+    font-weight:bold; /*bold = 700*/
+    color:#ff6b81;
+    margin : 20px 0;
+    text-shadow: 2px 2px 4px rgba(255, 107, 129, 0.3);
+}
+
+
+/*the navbar container*/
+.topnav
+{
+    overflow: hidden;
+    background-color: darkorchid;
+}
+
+/*Navbar*/
+.topnav a
+{
+    float: left;
+    display:block;
+    color: white;
+    text-align: center; 
+    padding: 14px 16px; /*14px = height, 16px = length*/
+    text-decoration: none;
+}
+
+/*change color on the bar*/
+.topnav a:hover 
+{
+    background-color:darkorchid;
+    color: plum;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0px;
+    margin: 20px;
+}
+
+.column
+{
+    flex: 1; /*divide column width equally*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*align text to center */
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    height: 120px;
+
+    color :antiquewhite;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.column:hover {
+    transform: translateY(-5px); /* Lift the box slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow */
+    opacity: 0.9; /* Slight transparency on hover */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three images per row */
+    gap: 10px; /* Space between images */
+    justify-content: center; /* Center the entire grid */
+}
+
+.image-grid img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+}
+
+.image-grid img:nth-child(4),
+.image-grid img:nth-child(5) {
+    grid-column: span 1; /* Make each of the last two images take up one column */
+    justify-self: center; /* Center the images horizontally */
+}
+
+
+
